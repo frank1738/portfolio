@@ -18,6 +18,10 @@ This is my portfolio website to showcase what I'm working on currently. It si re
 
 - ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 
+## Live Demo
+
+[my portfolio](https://frank1738.github.io/portfolio/)
+
 👤 **Authors**
 
 ## Frankline osoro
