@@ -1,15 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
-/*==================== VARIABLES CSS ====================*/
+/* ==================== VARIABLES CSS ==================== */
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 0.5rem;
+}
 
 :root {
   --header-height: 3rem;
 
-  /*========== Colors ==========*/
+  /* ========== Colors ========== */
 
   /* Change favorite color */
 
-  --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 250;
 
   /* HSL color mode */
 
@@ -26,7 +37,7 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-  /*========== Font and typography ==========*/
+  /* ========== Font and typography ========== */
 
   --body-font: "Poppins", sans-serif;
 
@@ -40,13 +51,12 @@
   --small-font-size: 0.813rem;
   --smaller-font-size: 0.75rem;
 
-  /*========== Font weight ==========*/
+  /* ========== Font weight ========== */
 
   --font-medium: 500;
-
   --font-semi-bold: 600;
 
-  /*========== Margenes Bottom ==========*/
+  /* ========== Margenes Bottom ========== */
 
   /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
 
@@ -59,7 +69,7 @@
   --mb-2-5: 2.5rem;
   --mb-3: 3rem;
 
-  /*========== z index ==========*/
+  /* ========== z index ========== */
 
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -80,7 +90,7 @@
   }
 }
 
-/*========== Variables Dark theme ==========*/
+/* ========== Variables Dark theme ========== */
 
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 30%, 8%);
@@ -91,7 +101,7 @@ body.dark-theme {
   --container-color: hsl(var(--hue--color), 29%, 16%);
 }
 
-/*========== Button Dark/Light ==========*/
+/* ========== Button Dark/Light ========== */
 
 .nav-btns {
   display: flex;
@@ -109,7 +119,7 @@ body.dark-theme {
   color: var(--first-color);
 }
 
-/*==================== BASE ====================*/
+/* ==================== BASE ==================== */
 
 * {
   box-sizing: border-box;
@@ -150,7 +160,7 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
+/* ==================== REUSABLE CSS CLASSES ==================== */
 
 .section {
   padding: 2rem 0 4rem;
@@ -173,7 +183,7 @@ img {
   text-align: center;
 }
 
-/*==================== LAYOUT ====================*/
+/* ==================== LAYOUT ==================== */
 
 .container {
   max-width: 768px;
@@ -196,7 +206,7 @@ img {
   padding: 0.5rem;
 }
 
-/*==================== NAV ====================*/
+/* ==================== NAV ==================== */
 
 .nav {
   max-height: 968px;
@@ -233,7 +243,7 @@ img {
     width: 100%;
     background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 0px 10px rgba(0 0 0/15%);
+    box-shadow: 0 0 10px rgba(0 0 0/15%);
     transition: 0.3s;
   }
 }
@@ -291,7 +301,7 @@ img {
   box-shadow: 0 -1px 4px rgba(0 0 0/15%);
 }
 
-/*==================== HOME ====================*/
+/* ==================== HOME ==================== */
 
 .home-container {
   gap: 1rem;
@@ -372,7 +382,7 @@ img {
   font-size: 1.2rem;
 }
 
-/*==================== BUTTONS ====================*/
+/* ==================== BUTTONS ==================== */
 
 .button {
   display: inline-block;
@@ -399,7 +409,7 @@ img {
 .button-icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  transform: 0.3s;
+  translate: 0.3s;
 }
 
 .button-flex {
@@ -422,7 +432,7 @@ img {
   color: var(--first-color-alt);
 }
 
-/*==================== ABOUT ====================*/
+/* ==================== ABOUT ==================== */
 
 .about-img {
   width: 278px;
@@ -463,7 +473,7 @@ img {
   justify-content: center;
 }
 
-/*==================== SKILLS ====================*/
+/* ==================== SKILLS ==================== */
 
 .skilss-container {
   row-gap: 0;
@@ -486,13 +496,13 @@ img {
   margin-right: var(--mb-0-75);
 }
 
-.skills-title {
+/* .skills-title {
   font-size: var(--h3-font-size);
-}
+} */
 
 .skills-subtitle {
   font-size: var(--small-font-size);
-  color: --text-color-light;
+  color: var(--text-color-light);
 }
 
 .skills-arrow {
@@ -504,6 +514,7 @@ img {
   display: flex;
   justify-content: space-between;
   margin-bottom: var(--mb-0-5);
+  font-size: var(--h3-font-size);
 }
 
 .skills-name {
@@ -593,7 +604,7 @@ img {
   transform: rotate(-180deg);
 }
 
-/*==================== QUALIFICATION ====================*/
+/* ==================== QUALIFICATION ==================== */
 
 .qualification-tabs {
   display: flex;
@@ -666,7 +677,7 @@ img {
   color: var(--first-color);
 }
 
-/*==================== SERVICES ====================*/
+/* ==================== SERVICES ==================== */
 
 .service-container {
   gap: 1.5rem;
@@ -766,11 +777,10 @@ img {
 
 .active-modal {
   opacity: 1;
-
   visibility: visible;
 }
 
-/*==================== PORTFOLIO ====================*/
+/* ==================== PORTFOLIO ==================== */
 
 .portfolio-container {
   overflow: inherit;
@@ -801,7 +811,7 @@ img {
   transform: translate(0.25rem);
 }
 
-/*==================== Swiper ====================*/
+/* ==================== Swiper ==================== */
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -835,7 +845,7 @@ img {
   outline: none;
 }
 
-/*==================== PROJECT IN MIND ====================*/
+/* ==================== PROJECT IN MIND ==================== */
 
 .project {
   text-align: center;
@@ -868,12 +878,13 @@ img {
   border-radius: 0.5rem;
 }
 
-/*==================== TESTIMONIAL ====================*/
+/* ==================== TESTIMONIAL ==================== */
 
 .testimonial-data,
 .testimonial-header {
   display: flex;
 }
+
 .testimonial-data {
   justify-content: space-between;
   margin-bottom: var(--mb-1);
@@ -908,7 +919,7 @@ img {
   bottom: 0;
 }
 
-/*==================== CONTACT ME ====================*/
+/* ==================== CONTACT ME ==================== */
 
 .contact-container {
   row-gap: 3rem;
@@ -957,7 +968,7 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
-/*==================== FOOTER ====================*/
+/* ==================== FOOTER ==================== */
 
 .footer {
   padding-top: 2rem;
@@ -987,18 +998,18 @@ img {
   row-gap: 1.5rem;
 }
 
-.footer-link:hover {
+/* .footer-link:hover {
   color: var(--first-color-lighter);
-}
+} */
 
 .footer-social {
   font-size: 1.25rem;
   margin-right: var(--mb-0-25);
 }
 
-.footer-social:hover {
+/* .footer-social:hover {
   color: var(--first-color-lighter);
-}
+} */
 
 .footer-copy {
   font-size: var(--small-font-size);
@@ -1014,7 +1025,15 @@ img {
   color: #fff;
 }
 
-/*========== SCROLL UP ==========*/
+.footer-social:hover {
+  color: var(--first-color-lighter);
+}
+
+footer-link:hover {
+  color: var(--first-color-lighter);
+}
+
+/* ========== SCROLL UP ========== */
 
 .scrollup {
   position: fixed;
@@ -1042,21 +1061,6 @@ img {
 .show-scroll {
   bottom: 5rem;
 }
-
-/*========== SCROLL BAR ==========*/
-
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: grey;
-  border-radius: 0.5rem;
-}
-
-/*==================== MEDIA QUERIES ====================*/
 
 @media screen and (max-width: 350px) {
   .container {
@@ -1122,7 +1126,7 @@ img {
   }
 }
 
-/* For small devices */ /* For medium devices */ /* For large devices */
+/* For small devices */
 
 @media screen and (min-width: 568px) {
   .home-content {
@@ -1316,6 +1320,7 @@ img {
   .social-links {
     justify-self: flex-end;
   }
+
   .footer-copy {
     margin-top: 4.5rem;
   }
