@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 /* ==================== VARIABLES CSS ==================== */
 
@@ -39,7 +39,7 @@
 
   /* ========== Font and typography ========== */
 
-  --body-font: "Poppins", sans-serif;
+  --body-font: 'Poppins', sans-serif;
 
   /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 
@@ -409,7 +409,7 @@ img {
 .button-icon {
   font-size: 1.25rem;
   margin-left: var(--mb-0-5);
-  translate: 0.3s;
+  transition: all 0.3s ease-in;
 }
 
 .button-flex {
@@ -998,18 +998,10 @@ img {
   row-gap: 1.5rem;
 }
 
-/* .footer-link:hover {
-  color: var(--first-color-lighter);
-} */
-
 .footer-social {
   font-size: 1.25rem;
   margin-right: var(--mb-0-25);
 }
-
-/* .footer-social:hover {
-  color: var(--first-color-lighter);
-} */
 
 .footer-copy {
   font-size: var(--small-font-size);
@@ -1029,7 +1021,7 @@ img {
   color: var(--first-color-lighter);
 }
 
-footer-link:hover {
+.footer-link:hover {
   color: var(--first-color-lighter);
 }
 

@@ -107,7 +107,7 @@ const swiperPortfolio = new Swiper('.portfolio-container', {
 
 /* ==================== TESTIMONIAL ==================== */
 
-let swiperTestimonial = new Swiper('.testimonial-container', {
+const swiperTestimonial = new Swiper('.testimonial-container', {
   loop: true,
   grabCurser: true,
   spaceBetween: 48,
@@ -171,8 +171,6 @@ function scrollTop() {
 }
 window.addEventListener('scroll', scrollTop);
 
-/*==================== DARK LIGHT THEME ====================*/
-
 /* ==================== DARK LIGHT THEME ==================== */
 const themeButton = document.getElementById('theme-button');
 const darkTheme = 'dark-theme';
@@ -185,7 +183,7 @@ const selectedIcon = localStorage.getItem('selected-icon');
 // We obtain the current theme that the interface has by validating the dark-theme class
 /* eslint-disable no-confusing-arrow */
 /* eslint-disable implicit-arrow-linebreak */
-/* eslint-disable implicit-arrow-comma-dangle */
+/* eslint-disable comma-dangle */
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? 'dark' : 'light';
 const getCurrentIcon = () =>
