@@ -1,6 +1,6 @@
 # My portfolio
 
-This is my portfolio website to showcase what I'm working on currently. It si responsive for both small,medium and large screens.
+This is my portfolio website to showcase what I'm working on currently. It is responsive to small,medium and large screens.
 
 ## Built With
 
