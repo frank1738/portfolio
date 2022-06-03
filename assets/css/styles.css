@@ -139,6 +139,10 @@ body {
   color: var(--text-color);
 }
 
+#mask0 {
+  mask-type: alpha;
+}
+
 h1,
 h2,
 h3,
