@@ -1,6 +1,6 @@
 # My portfolio
 
-This is my portfolio website to showcase what i'm working on currently.
+This is my portfolio website to showcase what I'm working on currently. It si responsive for both small,medium and large screens.
 
 ## Built With
 
@@ -8,7 +8,7 @@ This is my portfolio website to showcase what i'm working on currently.
 
 - CSS
 
--JavaScript
+- JavaScript
 
 - Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
 
