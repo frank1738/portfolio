@@ -1,4 +1,11 @@
 # My portfolio
+## Dark mode
+![image](https://user-images.githubusercontent.com/98453979/171995345-4ad7565e-21c7-40ef-99a3-4546da3b34af.png)
+
+## Light Mode
+![image](https://user-images.githubusercontent.com/98453979/171995386-7896cbab-1faa-40f7-9f21-39e381061c40.png)
+
+
 
 This is my portfolio website to showcase what I'm working on currently. It is responsive to small,medium and large screens.
 
