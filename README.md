@@ -1,56 +1,34 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# My portfolio
 
-# Project Name
-
-> Description the project.
-
+This is my portfolio website to showcase what I'm working on currently. It is responsive to small,medium and large screens.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
 
-## Live Demo (if available)
+- CSS
 
-[Live Demo Link](https://livedemo.com)
+- JavaScript
 
+- Lighthouse (An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more).
 
-## Getting Started
+- Webhint (A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors).
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+- Stylelint (A mighty, modern linter that helps you avoid errors and enforce conventions in your styles).
 
+- ESlint (A mighty, modern linter that helps you avoid errors and enforce conventions in JavaScript codes)
 
-To get a local copy up and running follow these simple example steps.
+## Live Demo
 
-### Prerequisites
+[my portfolio](https://frank1738.github.io/portfolio/)
 
-### Setup
+👤 **Authors**
 
-### Install
+## Frankline osoro
 
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@frank1738](https://github.com/frank1738)
+- Twitter: [@frankhiggins08](https://twitter.com/frankhiggins08)
+- LinkedIn: [Frankline Osoro](http://www.linkedin.com/in/frankline-osoro-b526ba18b)
 
 ## 🤝 Contributing
 
@@ -64,9 +42,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+The design has been inspired by:
+
+[Microverse](https://www.microverse.org)
 
 ## 📝 License
 
