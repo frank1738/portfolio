@@ -51,7 +51,7 @@ Give a ⭐️ if you like this project!
 
 The design has been inspired by:
 
-[Microverse](https://www.microverse.org)
+[Bedimcode](https://www.youtube.com/c/Bedimcode)
 
 ## 📝 License
 
