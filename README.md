@@ -29,7 +29,7 @@ This is my portfolio website to showcase what I'm working on currently. It is re
 
 [my portfolio](https://frank1738.github.io/portfolio/)
 
-👤 **Authors**
+👤 **Author**
 
 ## Frankline osoro
 
