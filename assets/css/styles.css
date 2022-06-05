@@ -397,6 +397,10 @@ img {
   font-weight: var(--font-medium);
 }
 
+.submit-btn {
+  border: none;
+}
+
 .button-white {
   background-color: #fff;
   color: var(--first-color);
@@ -526,18 +530,23 @@ img {
   font-weight: var(--font-medium);
 }
 
-.skills-bar,
-.skills-percentage {
-  height: 5px;
-  border-radius: 0.25rem;
-}
-
 .skills-list {
   row-gap: 1.5rem;
   padding-left: 2.7rem;
 }
 
 .skills-bar {
+  height: 1px;
+  background-color: var(--first-color-lighter);
+}
+
+.js {
+  background-color: var(--first-color-lighter);
+  height: 0.5px;
+}
+
+.figma {
+  height: 0.5px;
   background-color: var(--first-color-lighter);
 }
 

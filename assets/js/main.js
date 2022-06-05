@@ -105,28 +105,6 @@ const swiperPortfolio = new Swiper('.portfolio-container', {
   },
 });
 
-/* ==================== TESTIMONIAL ==================== */
-
-const swiperTestimonial = new Swiper('.testimonial-container', {
-  loop: true,
-  grabCurser: true,
-  spaceBetween: 48,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  breakpoints: {
-    568: {
-      slidesPerView: 2,
-    },
-  },
-});
-
 /* ==================== SCROLL SECTIONS ACTIVE LINK ==================== */
 
 const sections = document.querySelectorAll('section[id]');
