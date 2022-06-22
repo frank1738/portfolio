@@ -329,6 +329,18 @@ img {
   transition: 0.3s;
 }
 
+.desc {
+  font-size: 0.95rem;
+}
+
+.contact-btn:hover {
+  color: #fff;
+}
+
+.port {
+  font-size: var(--small-font-size);
+}
+
 .home-social-icon:hover {
   color: var(--first-color-alt);
   transform: scaleX(1.1);
