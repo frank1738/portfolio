@@ -239,6 +239,19 @@ img {
   color: var(--first-color);
 }
 
+.git {
+  margin-left: 5rem;
+  color: var(--text-color);
+}
+
+.git:hover {
+  color: grey;
+}
+
+.uil-github {
+  font-size: 3rem;
+}
+
 @media screen and (max-width: 767px) {
   .nav-menu {
     position: fixed;
