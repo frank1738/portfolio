@@ -1,7 +1,49 @@
 /* ==================== MENU SHOW Y HIDDEN ==================== */
+import { projects } from './projects.js';
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
+const swiperContainer = document.querySelector('.swiper-wrapper');
+
+const loadProjects = () => {
+  for (let i = 0; i < projects.length; i++) {
+    const projectContainer = document.createElement('div');
+    const classNames = ['portfolio-content', 'grid', 'swiper-slide'];
+    classNames.forEach((className) => {
+      projectContainer.classList.add(className);
+    });
+    projectContainer.innerHTML = `<img
+    src=${projects[i].imageURL}
+    alt="portfoloio-img"
+    class="portfolio-img"
+  />
+  <div class="portfolio-data">
+    <h3 class="portfolio-title">${projects[i].title}</h3>
+    <p class="portfolio-description desc port">
+     ${projects[i].descripion}
+    </p>
+    <div class="dev-links">
+    <a
+      href=${projects[i].live}
+      target="_blank"
+      class="button button-flex button-small portfolio-btn"
+      rel="noopener"
+      >See live<i class="uil uil-arrow-up-right button-icon"></i
+    ></a>
+    <a
+      href=${projects[i].github}
+      target="_blank"
+      class="button button-flex button-small portfolio-btn"
+      rel="noopener"
+      >Source<i class="uil uil uil-github button-icon"></i
+    ></a>
+  </div>
+  </div>`;
+    swiperContainer.appendChild(projectContainer);
+  }
+};
+
+loadProjects();
 
 /* Validate if constant exists */
 if (navToggle) {
@@ -94,11 +136,11 @@ modalClose.forEach((btn) => {
 
 const swiperPortfolio = new Swiper('.portfolio-container', {
   cssMode: true,
-  loop: true,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,

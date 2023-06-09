@@ -240,8 +240,6 @@ img {
 }
 
 .git {
-  margin-left: 5rem;
-  color: var(--text-color);
 }
 
 .git:hover {
@@ -834,6 +832,12 @@ img {
   justify-self: center;
   height: 15rem;
   object-fit: cover;
+}
+
+.dev-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
 }
 
 .portfolio-title {
