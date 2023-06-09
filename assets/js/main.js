@@ -157,7 +157,7 @@ function scrollActive() {
   sections.forEach((current) => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 50;
-    sectionId = current.getAttribute('id');
+    let sectionId = current.getAttribute('id');
 
     /* eslint-disable prefer-template */
 
