@@ -1,9 +1,41 @@
 /* ==================== MENU SHOW Y HIDDEN ==================== */
 import { projects } from './projects.js';
+import { testimonials } from './projects.js';
 const navMenu = document.getElementById('nav-menu');
 const navToggle = document.getElementById('nav-toggle');
 const navClose = document.getElementById('nav-close');
 const swiperContainer = document.querySelector('.swiper-wrapper');
+const testimonialContainer = document.querySelector('.testimonial-div');
+
+const loadTestimonials = () => {
+  for (let i = 0; i < testimonials.length; i++) {
+    const testimonialDiv = document.createElement('div');
+    const classNames = ['test-wrapper', 'swiper-slide'];
+    classNames.forEach((className) => {
+      testimonialDiv.classList.add(className);
+    });
+    testimonialDiv.innerHTML = `<div class="image-div">
+    <a href=${testimonials[i].linkdin} target="_blank"
+      ><img
+        src=${testimonials[i].imageUrl}
+        class="testimonial-img"
+        alt="testimonial"
+    /></a>
+  </div>
+  <div class="testimonial-container">
+    <p class="testimonial-paragraph">
+      ${testimonials[i].content}
+    </p>
+    <img src="./assets/img/quote.png" alt="quote" class="quote" />
+    <div class="positions">
+      <h3>${testimonials[i].name}</h3>
+      <span>${testimonials[i].title}</span>
+    </div>
+  </div>`;
+    testimonialContainer.appendChild(testimonialDiv);
+  }
+};
+loadTestimonials();
 
 const loadProjects = () => {
   for (let i = 0; i < projects.length; i++) {
@@ -144,6 +176,15 @@ const swiperPortfolio = new Swiper('.portfolio-container', {
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
+  },
+});
+
+const testimonialsContent = new Swiper('.testimonials-content', {
+  cssMode: true,
+  autoplay: {
+    enabled: true, // Enable autoplay
+    delay: 5000, // Set the delay between slides in milliseconds (e.g., 3000 milliseconds = 3 seconds)
+    disableOnInteraction: false, // Continue autoplay even when the user interacts with the slider
   },
 });
 

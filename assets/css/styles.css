@@ -101,11 +101,118 @@ body.dark-theme {
   --container-color: hsl(var(--hue--color), 29%, 16%);
 }
 
+.testimonial-container {
+  background-color: var(--body-color);
+  flex-direction: column;
+  width: 375px;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 1rem 0.5rem;
+  justify-content: flex-end;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.testimonial-div {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  z-index: 20;
+  border: 1px solid lightgray;
+}
+
+.test-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px !important;
+  position: relative;
+}
+
+.frames-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.first-frame,
+.second-frame {
+  width: 200px;
+  height: 200px;
+  z-index: 5;
+}
+
+.first-frame {
+  border: 1px solid var(--text-color-light);
+  position: absolute;
+  top: 21%;
+  left: 16%;
+  z-index: 10;
+  opacity: 0.5;
+}
+
+.second-frame {
+  position: absolute;
+  bottom: 22%;
+  right: 16%;
+  background-color: var(--text-color-light);
+  opacity: 0.5;
+}
+
+.image-div {
+  background-color: hsl(250, 60%, 99%);
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: 0%;
+  border-radius: 50%;
+  padding: 0.4rem;
+}
+
+.positions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.positions > h3 {
+  color: #55a7ae;
+}
+
+.testimonial-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.quote {
+  width: 25px;
+  height: 25px;
+}
+
+.testimonial-paragraph {
+  margin-top: 1rem;
+  height: 100px;
+  overflow-y: auto;
+  font-size: 0.7rem;
+}
+
 /* ========== Button Dark/Light ========== */
 
 .nav-btns {
   display: flex;
   align-items: center;
+}
+
+.image-div {
 }
 
 .change-theme {
@@ -260,6 +367,24 @@ img {
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 0 10px rgba(0 0 0/15%);
     transition: 0.3s;
+  }
+
+  .about-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .testimonial-container {
+    width: 90%;
+  }
+
+  .first-frame {
+    top: -5%;
+    left: 16%;
+  }
+  .second-frame {
+    bottom: -5%;
+    right: 16%;
   }
 }
 
@@ -464,13 +589,6 @@ img {
 }
 
 /* ==================== ABOUT ==================== */
-
-.about-img {
-  width: 278px;
-  border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
-}
 
 .about-description {
   text-align: center;
@@ -774,7 +892,7 @@ img {
 
 .services-modal-content {
   position: relative;
-  background-color: #fff;
+  background-color: var(--body-color);
   padding: 1.5rem;
   border-radius: 0.5rem;
 }
@@ -865,6 +983,10 @@ img {
   color: var(--first-color);
 }
 
+.swiper-slide {
+  height: 100%;
+}
+
 .swiper-button-prev {
   left: -0.5rem;
 }
@@ -918,43 +1040,6 @@ img {
   justify-self: center;
   margin-bottom: var(--mb-2-5);
   border-radius: 0.5rem;
-}
-
-/* ==================== TESTIMONIAL ==================== */
-
-.testimonial-data,
-.testimonial-header {
-  display: flex;
-}
-
-.testimonial-data {
-  justify-content: space-between;
-  margin-bottom: var(--mb-1);
-}
-
-.testimonial-img {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  margin-right: var(--mb-0-75);
-}
-
-.testimonial-name {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.testimonial-client {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
-}
-
-.testimonial-description {
-  margin-bottom: var(--mb-2-5);
-}
-
-.testimonial-star {
-  color: var(--first-color);
 }
 
 .swiper-container .swiper-pagination-testimonial {
@@ -1142,25 +1227,17 @@ img {
   .project-img {
     width: 200px;
   }
-
-  .testimonial-header,
-  .testimonial-data {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .testimonial-img {
-    margin-right: 0;
-    margin-bottom: var(--mb-0-25);
-  }
-
-  .testimonial-data,
-  .testimonial-description {
-    text-align: center;
-  }
 }
 
-/* For small devices */
+@media only screen and (min-width: 568px) and (max-width: 767px) {
+  .first-frame {
+    display: none;
+  }
+
+  .second-frame {
+    display: none;
+  }
+}
 
 @media screen and (min-width: 568px) {
   .home-content {
@@ -1266,7 +1343,8 @@ img {
   }
 
   .about-img {
-    width: 300px;
+    width: 200px;
+    height: 200px;
   }
 
   .about-description {
@@ -1357,10 +1435,6 @@ img {
 
   .footer-copy {
     margin-top: 4.5rem;
-  }
-
-  .header {
-    box-shadow: 0 0 10px rgba(0 0 0/15%);
   }
 }
 

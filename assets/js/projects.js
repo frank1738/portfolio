@@ -53,4 +53,47 @@ export const projects = [
     live: 'https://frank1738.github.io/coffee-shop-project-/',
     github: 'https://github.com/frank1738/coffee-shop-project-.git',
   },
+
+  {
+    id: 6,
+    title: 'Personal website',
+    imageURL:
+      'https://sparkly-kitten-2ade95.netlify.app/static/media/logo.6c5db06c4cb73aecb088.png',
+    descripion: 'This my personal website that I am still working on',
+
+    live: 'https://sparkly-kitten-2ade95.netlify.app/',
+    github: 'https://github.com/frank1738/Co-website.git',
+  },
+];
+
+export const testimonials = [
+  {
+    name: 'Eric Mahare',
+    imageUrl:
+      'https://media.licdn.com/dms/image/D4D35AQEO1kgv-XRHMA/profile-framedphoto-shrink_200_200/0/1680327108198?e=1687186800&v=beta&t=387ZzNTu8h0OertFJNmp4iIq-oSHMvNnHvTru-shwrM',
+    title: 'Web Developer',
+    linkdin: 'https://www.linkedin.com/in/ericmahare/',
+    content:
+      'Frankline Osoro is the best person to work with. He is well organized, diligent, and a team player. All these attributes were critical when doing our school group project, which involved working together on a zoom call. Being a team player and a good timekeeper we were able to finish all our tasks successfully and on time.',
+  },
+  {
+    name: 'Yasin Warsame',
+    imageUrl:
+      'https://media.licdn.com/dms/image/D4D35AQF067L20T7IWQ/profile-framedphoto-shrink_800_800/0/1667222165468?e=1687186800&v=beta&t=PaTtqaA5zF7SCOR5nUUw1G6xb_RzukAA1uhk3KmekYo',
+
+    title: 'Full-Stack Web Developer',
+    linkdin: 'https://www.linkedin.com/in/yasin-warsame/',
+    content:
+      'Frankline is a fantastic software engineer, and his detail-oriented approach made him a pleasure to work with. Frankline views writing clean, accessible code as a calling, and he is great at identifying areas where we can improve UI. He is also super friendly I cant recommend him enough',
+  },
+
+  {
+    name: 'Grace Muthui',
+    imageUrl:
+      'https://media.licdn.com/dms/image/D4D35AQEl6VoN3x8Ndw/profile-framedphoto-shrink_800_800/0/1659110451984?e=1687186800&v=beta&t=9AOmKdthI7T6FOvzz2A0TqS2GmcV-Ct-Jxc7hCa0ov8',
+    title: 'Software Engineer',
+    linkdin: 'https://www.linkedin.com/in/grayce-muthui/',
+    content:
+      'Frank was among the first people who I interacted with when I started my journey in software development. He is very technical and also a good mentor. I highly recommend him for any full stack development job as his skills show a lot of professionalism',
+  },
 ];
