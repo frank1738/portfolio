@@ -79,8 +79,7 @@ export const testimonials = [
   {
     name: 'Yasin Warsame',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4D35AQF067L20T7IWQ/profile-framedphoto-shrink_800_800/0/1667222165468?e=1687186800&v=beta&t=PaTtqaA5zF7SCOR5nUUw1G6xb_RzukAA1uhk3KmekYo',
-
+      'https://media.licdn.com/dms/image/D4D35AQF067L20T7IWQ/profile-framedphoto-shrink_200_200/0/1667222165468?e=1688061600&v=beta&t=ao-KZ_cWX3LG5iZ43O_TMihPNJJZ9uZb3r-_Hg48OWE',
     title: 'Full-Stack Web Developer',
     linkdin: 'https://www.linkedin.com/in/yasin-warsame/',
     content:
@@ -90,7 +89,7 @@ export const testimonials = [
   {
     name: 'Grace Muthui',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4D35AQEl6VoN3x8Ndw/profile-framedphoto-shrink_800_800/0/1659110451984?e=1687186800&v=beta&t=9AOmKdthI7T6FOvzz2A0TqS2GmcV-Ct-Jxc7hCa0ov8',
+      'https://pbs.twimg.com/profile_images/1654806859566465024/xWb_AKWq_400x400.jpg',
     title: 'Software Engineer',
     linkdin: 'https://www.linkedin.com/in/grayce-muthui/',
     content:

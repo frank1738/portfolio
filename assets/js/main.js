@@ -269,3 +269,29 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+const hiddenElements = document.querySelectorAll('.hidden');
+const imageElements = document.querySelectorAll('.image-anime');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const imageObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('expand');
+    } else {
+      entry.target.classList.remove('expand');
+    }
+  });
+});
+
+hiddenElements.forEach((el) => observer.observe(el));
+imageElements.forEach((el) => imageObserver.observe(el));
