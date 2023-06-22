@@ -1274,6 +1274,33 @@ img {
     margin-right: auto;
   }
 
+  .show {
+    animation: up 1s;
+  }
+  
+  .expand {
+    animation: increaseSize 1s;
+  }
+  
+  @keyframes up {
+    from {
+      transform: translateY(100px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes increaseSize {
+    from {
+      transform: scale(0.5);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+
   body {
     margin: 0;
   }
@@ -1487,28 +1514,3 @@ img {
   }
 }
 
-.show {
-  animation: up 1s;
-}
-
-.expand {
-  animation: increaseSize 1s;
-}
-
-@keyframes up {
-  from {
-    transform: translateY(100px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes increaseSize {
-  from {
-    transform: scale(0.5);
-  }
-  to {
-    transform: scale(1);
-  }
-}
