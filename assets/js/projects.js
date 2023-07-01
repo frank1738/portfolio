@@ -9,6 +9,18 @@ export const projects = [
     live: 'https://admin-dashboard-hpi4.onrender.com/',
     github: 'https://github.com/frank1738/Dashboard.git',
   },
+
+  {
+    id: 8,
+    title: 'Triple T Oasis',
+    imageURL:
+      'https://www.waterth.com/wp-content/uploads/2022/10/WVM-S1-edit.png',
+    descripion:
+      'Developed a new website for Triple T Oasis, a bottled drinking water vendor and refill business, to improve their online presence',
+
+    github: 'https://github.com/frank1738/Oasis',
+    live: 'http://trippletoasis.com/',
+  },
   {
     id: 2,
     title: 'Space Travelers Hub',
