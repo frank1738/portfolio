@@ -91,7 +91,7 @@ export const testimonials = [
   {
     name: 'Yasin Warsame',
     imageUrl:
-      'https://media.licdn.com/dms/image/D4D35AQF067L20T7IWQ/profile-framedphoto-shrink_200_200/0/1667222165468?e=1688061600&v=beta&t=ao-KZ_cWX3LG5iZ43O_TMihPNJJZ9uZb3r-_Hg48OWE',
+      'https://t3.ftcdn.net/jpg/03/46/83/96/360_F_346839683_6nAPzbhpSkIpb8pmAwufkC7c5eD7wYws.jpg',
     title: 'Full-Stack Web Developer',
     linkdin: 'https://www.linkedin.com/in/yasin-warsame/',
     content:
