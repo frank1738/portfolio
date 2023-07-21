@@ -1,5 +1,16 @@
 export const projects = [
   {
+    id: 9,
+    title: 'ShelfWise',
+    imageURL:
+      'https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=600',
+    descripion:
+      'Shelfwise is a dynamic web application designed to revolutionize library management, providing users with a seamless and user-friendly platform to explore, borrow, and reserve books.',
+
+    live: 'https://lalo-t1v2.onrender.com/',
+    github: 'https://github.com/frank1738/Library.git',
+  },
+  {
     id: 1,
     title: 'Admin',
     imageURL:

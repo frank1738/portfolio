@@ -182,7 +182,7 @@ const swiperPortfolio = new Swiper('.portfolio-container', {
 const testimonialsContent = new Swiper('.testimonials-content', {
   cssMode: true,
   autoplay: {
-    enabled: true, // Enable autoplay
+    enabled: false, // Enable autoplay
     delay: 5000, // Set the delay between slides in milliseconds (e.g., 3000 milliseconds = 3 seconds)
     disableOnInteraction: false, // Continue autoplay even when the user interacts with the slider
   },
